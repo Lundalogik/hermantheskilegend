@@ -311,7 +311,7 @@ input {
 
 /* CONTACT SEPARATOR */
 #sep {
-	background: url(../img/sep.jpg) no-repeat center top;
+	background: url(../img/sep2.jpg) no-repeat center top;
 	padding-top: 100px;
 	background-attachment: relative;
 	background-position: center center;
@@ -388,4 +388,16 @@ input {
 #h2 h3 {
 	margin-top: 30px;
 	letter-spacing: 1px;
+}
+
+#twitter-widget-0 {
+	width: 100% !important;
+}
+
+#map_canvas{
+	width: 100% !important;
+}
+
+.snapwidget-widget body div{
+	width: 100% !important;
 }
