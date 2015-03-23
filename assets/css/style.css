@@ -223,13 +223,18 @@ input {
 #h .logo {
 	margin-top: 30px;
 	margin-left: 40px;
-	padding-bottom: 150px;
+	padding-bottom: 70px;
 }
 
 #h .logo h2{
 	font-weight: 900;
 	color: white;
 	letter-spacing: 1px;
+}
+
+#h .icons{
+	padding-top: 200px;
+	padding-bottom: 100px;
 }
 
 #h h3 {
@@ -294,6 +299,14 @@ input {
 .clients .col-sm-2 {
 	height: 80px;
 	line-height: 80px;
+}
+
+.points{
+	padding: 20px 0px;
+}
+
+.points p{
+	margin-top: 40px;
 }
 
 /* CONTACT SEPARATOR */
