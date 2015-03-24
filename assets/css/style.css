@@ -44,6 +44,19 @@ p {
 	color: #666; 
 	margin-top: 10px; 
 }
+ol {
+	margin-bottom: 12px;
+	margin-left: 24px;
+	margin-top: 12px;
+}
+ol li {
+		padding: 0; 
+	    font-family: 'Lato', sans-serif;
+		font-weight: 300;
+		font-size: 18px; 
+		line-height: 28px;
+		color: #666; 
+	}
 
 html,
 body {
@@ -101,12 +114,12 @@ a {
 	-o-transition: background-color .4s linear, color .4s linear;
 	-ms-transition: background-color .4s linear, color .4s linear;
 	transition: background-color .4s linear, color .4s linear;
-	color: #F17D4E;
+	color: #F1B356;
 }
 a:hover,
 a:focus {
   text-decoration: none;
-  color:#696E74;
+  color:#CF9846;
 }
 
 .nopadding {
@@ -245,12 +258,13 @@ input {
 	border-radius: 70px;
 	height: 140px;
 	margin: 0 auto;
-	padding-top: 20px;
+	padding-top: 24px;
 	width: 140px;
 }
 
 #h h3 {
 	color: #000000;
+	font-size: 20px;
 	margin-top: 0px;
 }
 
@@ -258,7 +272,18 @@ input {
 	font-size: 40px;
 }
 
+/* GAME SECTION */
+#game h1 {
+	font-size: 46px;
+}
+
 /* GREY SECTION */
+.section-grey {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: #f5f5f5;
+}
+
 #g {
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -316,10 +341,6 @@ input {
 
 .points{
 	padding: 20px 0px;
-}
-
-.points p{
-	margin-top: 40px;
 }
 
 /* CONTACT SEPARATOR */
