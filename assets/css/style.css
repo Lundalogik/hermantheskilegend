@@ -101,7 +101,7 @@ a {
 	-o-transition: background-color .4s linear, color .4s linear;
 	-ms-transition: background-color .4s linear, color .4s linear;
 	transition: background-color .4s linear, color .4s linear;
-	color: #1abc9c;
+	color: #F17D4E;
 }
 a:hover,
 a:focus {
@@ -233,16 +233,29 @@ input {
 }
 
 #h .icons{
+	color: #000000;
 	padding-top: 200px;
 	padding-bottom: 100px;
 }
 
+#h .icons .circle{
+	background: #FFFFFF;
+    -moz-border-radius: 70px; 
+    -webkit-border-radius: 70px; 
+	border-radius: 70px;
+	height: 140px;
+	margin: 0 auto;
+	padding-top: 20px;
+	width: 140px;
+}
+
 #h h3 {
-	margin-top: 10px;
+	color: #000000;
+	margin-top: 0px;
 }
 
 #h i {
-	font-size: 50px;
+	font-size: 40px;
 }
 
 /* GREY SECTION */
