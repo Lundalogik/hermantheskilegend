@@ -256,7 +256,7 @@
     <script type="text/javascript">
       var renderHighscorelist = function(data){
         var html_string = "";
-        $.each(data, function(user){
+        $.each(data, function(i, user){
             html_string += '<li class="list-group-item">' + 
               '<span class="badge">' + user.score + '</span>' +
               user.name +
