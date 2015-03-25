@@ -258,11 +258,12 @@
     <script type="text/javascript">
       var renderHighscorelist = function(data){
         var html_string = "";
-        $.each(data, function(i, user){
+        $.each(data, function(i, contender){
             var pos = i + 1
             html_string += '<li class="list-group-item">' + 
-              '<span class="badge">' + user.score + '</span>' +
-              pos + '. ' +user.name +
+              '<span class="badge">' + contender.score + '</span>' +
+              '<img src="'+ contender.user.pic + '" alt="..." class="img-circle">' +
+              pos + '. ' +contender.user.fullname +' (' + contender.user.name + ')'+
             '</li>';
         });
         $("#hiscore-list").html(html_string);
