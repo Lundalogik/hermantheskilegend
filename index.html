@@ -113,6 +113,15 @@
       </div><!-- /.container -->
     </div>
 
+    <div id="scoreboard">
+      <div class="container mtb">
+        <h2 class="centered mb">Scoreboard</h2>
+          <ul class="list-group" id="hiscore-list">
+
+          </ul>
+      </div>
+    </div>
+
     <div id="points" class="container mtb">
       <div class="row points">
         <div class="col-md-3 col-md-offset-2 col-xs-6">
@@ -183,14 +192,7 @@
       </div><!--/container-->
     </div><!--/.F-->
 
-    <div id="scoreboard">
-      <div class="container mtb">
-        <h2 class="centered mb">Scoreboard</h2>
-          <ul class="list-group" id="hiscore-list">
 
-          </ul>
-      </div>
-    </div>
 
     <div id="faq">
       <div class="container mtb">
@@ -257,9 +259,10 @@
       var renderHighscorelist = function(data){
         var html_string = "";
         $.each(data, function(i, user){
+            var pos = i + 1
             html_string += '<li class="list-group-item">' + 
               '<span class="badge">' + user.score + '</span>' +
-              user.name +
+              pos + '. ' +user.name +
             '</li>';
         });
         $("#hiscore-list").html(html_string);
