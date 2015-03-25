@@ -5,7 +5,7 @@
   "error_page": "error.html",
   "proxy": {
     "api": {
-      "origin":"http://hermanskilegend.herokuapp.com",
+      "origin":"http://api.hermantheskilegend.com",
       "headers": {
         "Accept": "application/json"
       },

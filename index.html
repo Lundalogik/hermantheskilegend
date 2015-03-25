@@ -186,7 +186,9 @@
     <div id="scoreboard">
       <div class="container mtb">
         <h2 class="centered mb">Scoreboard</h2>
-        <p>Yeah.</p>
+          <ul class="list-group" id="hiscore-list">
+
+          </ul>
       </div>
     </div>
 
@@ -251,7 +253,28 @@
     <script src="assets/js/jquery.prettyPhoto.js"></script>
     <script src="assets/js/jquery.isotope.min.js"></script>
     <script src="assets/js/custom.js"></script>
-    
+    <script type="text/javascript">
+      var renderHighscorelist = function(data){
+        var html_string = "";
+        $.each(data, function(user){
+            html_string += '<li class="list-group-item">' + 
+              '<span class="badge">' + user.score + '</span>' +
+              user.name +
+            '</li>';
+        });
+        $("#hiscore-list").html(html_string);
+      };
+
+      $.ajax({
+        url: '/__/proxy/api/get_result',
+        type: 'GET',
+        dataType: 'json',
+        success: function(data) {
+          renderHighscorelist(data);
+        }
+      })
+
+    </script>
 
 
 
