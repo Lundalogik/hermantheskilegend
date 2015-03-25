@@ -282,7 +282,7 @@
             html_string += '<li class="list-group-item">' + 
               '<span class="badge">' + contender.score + '</span>' +
               '<img src="'+ contender.user.pic + '" alt="..." class="img-circle">' +
-              pos + '. ' +contender.user.fullname +' (' + contender.user.name + ')'+
+              '<span class="sbpos">' + pos + '.</span>' + '<span class="sbfullname">' + contender.user.fullname + '</span>' + '<span class="sbusername">' + '(' + contender.user.name + ')' + '</span>' +
             '</li>';
         });
         $("#hiscore-list").html(html_string);
