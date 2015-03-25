@@ -255,23 +255,23 @@ input {
 
 #h .icons .circle{
 	background: #FFFFFF;
-    -moz-border-radius: 70px; 
-    -webkit-border-radius: 70px; 
-	border-radius: 70px;
-	height: 140px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	height: 100px;
 	margin: 0 auto;
-	padding-top: 24px;
-	width: 140px;
+	padding-top: 8px;
+	width: 100px;
 }
 
 #h h3 {
 	color: #000000;
-	font-size: 20px;
+	font-size: 18px;
 	margin-top: 0px;
 }
 
 #h i {
-	font-size: 40px;
+	font-size: 34px;
 }
 
 /* GAME SECTION */
@@ -290,15 +290,25 @@ input {
 }
 
 #scoreboard ul.scorelist li.list-group-item .badge {
+	background-color: #F1B356;
 	font-size: 20px;
-	padding: 12px 16px;
 	margin-top: 25px;
+	padding: 12px 16px;
 }
 
 #scoreboard ul.scorelist li.list-group-item img {
 	margin-right: 20px;
 	height: 100px;
 	width: auto;
+}
+
+#scoreboard ul.scorelist li.list-group-item .sbpos {
+	margin-right: 5px;
+}
+
+#scoreboard ul.scorelist li.list-group-item .sbfullname {
+	margin-right: 5px;
+	font-weight: bold;
 }
 
 /* GREY SECTION */
