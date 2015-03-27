@@ -330,6 +330,10 @@ input {
 	font-weight: bold;
 }
 
+#scoreboard ul.scorelist li.list-group-item .sbfullname {
+	display: inline-block;
+}
+
 /* GREY SECTION */
 .section-grey {
 	background: #f5f5f5;
