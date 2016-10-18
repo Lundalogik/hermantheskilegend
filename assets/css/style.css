@@ -116,7 +116,7 @@ a {
 	-o-transition: background-color .4s linear, color .4s linear;
 	-ms-transition: background-color .4s linear, color .4s linear;
 	transition: background-color .4s linear, color .4s linear;
-	color: #F1B356;
+	color: #0E5E97;
 }
 a:hover,
 a:focus {
@@ -309,7 +309,7 @@ input {
 }
 
 #scoreboard ul.scorelist li.list-group-item .badge {
-	background-color: #F1B356;
+	background-color: #0E5E97;
 	font-size: 20px;
 	margin-top: 5px;
 	padding: 12px 16px;
