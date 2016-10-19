@@ -90,4 +90,4 @@ def on_callback():
         print(e)
     return "YES"
 
-bottle.run(app=app, host="0.0.0.0", port=os.environ.get('PORT', 5000))
+bottle.run(app=app, host="0.0.0.0", port=os.environ.get('PORT', 5000), server="gunicorn")
