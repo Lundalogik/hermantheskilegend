@@ -14,6 +14,9 @@ app = bottle.app()
 
 api = InstagramAPI(client_id=os.environ.get('INSTA_ID'), client_secret=os.environ.get('INSTA_SECRET'),redirect_uri="http://localhost:5000/oauth_callback")
 
+@route('/')
+def send_static():
+    return static_file("index.html", root='./')
 
 @route('/<filename:path>')
 def send_static(filename):
@@ -33,30 +36,37 @@ def test():
     ]
     return json.dumps(a)
 
-@route('/kill_all')
+@post('/kill_all')
 def die():
     redis.flushdb()
     return "All is dead!"
 
-@route('/kill/<user>')
+@post('/kill/<user>')
 def die(user):
     redis.zrem("leaderboard", user)
     return user + " is dead!"
 
-@route('/reset_insta')
+@post('/reset_insta')
 def die():
     redis.delete("insta")
     return "Insta is reset!"
 
-@route('/reset_score')
+@post('/reset_score')
 def die():
     redis.delete("leaderboard")
     return "Score is reset!"
 
-@route('/add_point/<user>/<point>')
+@post('/add_point/<user>/<point>')
 def die(user, point):
     redis.zincrby("leaderboard", user, int(point))
     return user + " got " + point + " new point"
+
+@post('/add_user/<user>')
+def add(user):
+    u = {"name": user, "fullname": user, "pic": "/assets/img/user.png",
+     "src": "own"}
+    redis.sadd(user, json.dumps(u))
+    return "added user: " + user
 
 @route('/init_insta')
 def home():
