@@ -1,1 +1,4 @@
 .divshot-cache/
+venv/
+__pycache__/
+.idea/
